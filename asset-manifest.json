@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Juliana/static/css/main.365c3a18.css",
-    "main.js": "/Juliana/static/js/main.1ae86ab7.js",
-    "static/js/787.e3ac883a.chunk.js": "/Juliana/static/js/787.e3ac883a.chunk.js",
-    "static/media/pf.png": "/Juliana/static/media/pf.1226bcba61c885fa0806.png",
-    "static/media/bandera.png": "/Juliana/static/media/bandera.7ea729cb581f5246735b.png",
-    "static/media/Productos.PNG": "/Juliana/static/media/Productos.d9fe524a0cb27b8da456.PNG",
-    "static/media/home-main.svg": "/Juliana/static/media/home-main.359935c39288e92d4dba5c9f2445b91d.svg",
-    "static/media/about.png": "/Juliana/static/media/about.aee0f771fbfc1e7b8fa8.png",
-    "static/media/c-sharp.png": "/Juliana/static/media/c-sharp.62f59edc5bb4d327ba51.png",
-    "static/media/home-bg.jpg": "/Juliana/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
-    "static/media/pre.svg": "/Juliana/static/media/pre.4410c5baaa673cc131da.svg",
-    "index.html": "/Juliana/index.html",
-    "main.365c3a18.css.map": "/Juliana/static/css/main.365c3a18.css.map",
-    "main.1ae86ab7.js.map": "/Juliana/static/js/main.1ae86ab7.js.map",
-    "787.e3ac883a.chunk.js.map": "/Juliana/static/js/787.e3ac883a.chunk.js.map"
+    "main.css": "/Portfolio/static/css/main.6fd50c1d.css",
+    "main.js": "/Portfolio/static/js/main.eaa21266.js",
+    "static/js/787.b98c23e5.chunk.js": "/Portfolio/static/js/787.b98c23e5.chunk.js",
+    "static/media/pf.png": "/Portfolio/static/media/pf.1226bcba61c885fa0806.png",
+    "static/media/bandera.png": "/Portfolio/static/media/bandera.7ea729cb581f5246735b.png",
+    "static/media/Productos.PNG": "/Portfolio/static/media/Productos.d9fe524a0cb27b8da456.PNG",
+    "static/media/home-main.svg": "/Portfolio/static/media/home-main.359935c39288e92d4dba5c9f2445b91d.svg",
+    "static/media/about.png": "/Portfolio/static/media/about.aee0f771fbfc1e7b8fa8.png",
+    "static/media/c-sharp.png": "/Portfolio/static/media/c-sharp.62f59edc5bb4d327ba51.png",
+    "static/media/home-bg.jpg": "/Portfolio/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
+    "static/media/pre.svg": "/Portfolio/static/media/pre.4410c5baaa673cc131da.svg",
+    "index.html": "/Portfolio/index.html",
+    "main.6fd50c1d.css.map": "/Portfolio/static/css/main.6fd50c1d.css.map",
+    "main.eaa21266.js.map": "/Portfolio/static/js/main.eaa21266.js.map",
+    "787.b98c23e5.chunk.js.map": "/Portfolio/static/js/787.b98c23e5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.365c3a18.css",
-    "static/js/main.1ae86ab7.js"
+    "static/css/main.6fd50c1d.css",
+    "static/js/main.eaa21266.js"
   ]
 }
