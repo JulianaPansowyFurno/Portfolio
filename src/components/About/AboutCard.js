@@ -10,9 +10,9 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
           Hola, soy <span className="purple"> Juliana Pansowy Furno </span>
             de <span className="purple"> Buenos Aires, Argentina.</span>
-            <br /> Soy estudiante de Informatica en 5to año en la escuela secundaria ORT Yatay
+            <br /> Soy estudiante de Ingeniería en Sistemas en UTN
             <br />
-            Ademas, estoy anotada ingenieria en Sistemas en UTN
+            Ademas, Estudie en el secundario Ort donde forge la mayoria de mis conocimientos
             <br />
             <br />
             Ademas de programar me gusta mucho:
@@ -22,10 +22,10 @@ function AboutCard() {
               <ImPointRight /> Viajar
             </li>
             <li className="about-activity">
-              <ImPointRight /> Leer
+              <ImPointRight /> Mirar Netflix
             </li>
             <li className="about-activity">
-              <ImPointRight /> Estar con mi familia
+              <ImPointRight /> Estar con mi familia y amigos
             </li>
           </ul>
 
