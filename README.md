@@ -1,11 +1,3 @@
-
----
-
-## README para Portfolio
-
-Copialo en el README del repo `Portfolio`.
-
-```md
 # Portfolio Personal
 
 Portfolio web personal desarrollado con React para presentar mi perfil, mis conocimientos técnicos y algunos de los proyectos realizados durante mi formación.
