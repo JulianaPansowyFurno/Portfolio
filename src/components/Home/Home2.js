@@ -34,6 +34,8 @@ function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
+        <h2 className="project-heading">Ideas que se vuelven <strong className="purple">proyectos.</strong></h2>
+        <p style={{color: "#c9bbd4"}}>Una selección de mis creaciones. Explorá sus detalles o guardá tus favoritas.</p>
        
         <Row>
         <Col md={4} className="project-card">

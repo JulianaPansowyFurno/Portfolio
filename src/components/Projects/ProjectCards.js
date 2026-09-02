@@ -13,13 +13,14 @@ function ProjectCards(props) {
   return (
     
       <Card className="project-card-view" style={{ justifyContent: "center", paddingBottom: "10px" }}>
+      {props.imgPath && <Card.Img variant="top" src={props.imgPath} alt={`Vista de ${props.title}`} loading="lazy" />}
       <Card.Body >
         <Card.Title><h2><strong className="main-name">{props.title}</strong></h2></Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
+        <div className="card-text" style={{ textAlign: "left" }}>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}> {props.corto} </p>  </blockquote>
-        </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
+        </div>
+        <Button variant="primary" href={props.ghLink} target="_blank" rel="noreferrer" aria-label={`Abrir enlace de ${props.title}`}>
           <BsGithub /> &nbsp;
         </Button>
         <Button

@@ -10,12 +10,13 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
           Hola, soy <span className="purple"> Juliana Pansowy Furno </span>
             de <span className="purple"> Buenos Aires, Argentina.</span>
-            <br /> Soy estudiante de Ingeniería en Sistemas en UTN
+            <br /> Soy estudiante de tercer año de Ingeniería en Sistemas de la Información en la UTN.
             <br />
-            Ademas, Estudie en el secundario Ort donde forge la mayoria de mis conocimientos
+            Estudié en ORT, donde construí gran parte de mis conocimientos de programación. Actualmente realizo una pasantía en Inteligencia Artificial y Comunicación Digital.
             <br />
             <br />
-            Ademas de programar me gusta mucho:
+            Me considero comprometida y creativa. Disfruto trabajar en equipo, aprender constantemente y aportar ideas que sumen valor.
+            <br /><br />Además de programar, me gusta mucho:
           </p>
           <ul>
             <li className="about-activity">

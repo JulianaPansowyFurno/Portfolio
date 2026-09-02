@@ -11,9 +11,8 @@ const [ data , setData ] = useState([]);
 useEffect(() => {
 async function fetchProductos() {
     try {
-    const response = await axios.get("./Trabajos.json")
-    console.log(response.data)
-        setData(response.data)
+    const response = await axios.get(`${process.env.PUBLIC_URL}/Trabajos.json`)
+        setData(response.data.map(project => ({ ...project, imagen: `${process.env.PUBLIC_URL}${project.imagen}` })))
     }
     catch(error) {
         console.log('Error fetching Pokemon data');

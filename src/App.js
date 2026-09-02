@@ -7,7 +7,7 @@ import Detalle from "./components/Detalle"
 import { ProductsProvider } from "./components/MyContext";
 import {FavoritoProvider } from "./components/favoritosContext";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Routes,
   Navigate
@@ -19,6 +19,7 @@ import Footer from "./components/Footer";
 import Favorito from "./components/Favoritos/Favorito";
 import Preloader from "../src/components/Pre"
 import ScrollToTop from "./components/ScrollToTop"
+import Career from "./components/Career/Career";
 
 function App() {
     const [load, upadateLoad] = useState(true);
@@ -43,9 +44,11 @@ function App() {
           <Route path="/Portfolio" element={<Home />} />
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/recorrido" element={<Career />} />
           <Route path="/creaciones" element={<Projects />} />
           <Route path="/detalle/:id" element={<Detalle />} />
           <Route path="/favorito" element={<Favorito />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
         <Footer />
         </div>

@@ -1,0 +1,128 @@
+:root {
+  --career-surface: #21162f;
+  --career-line: #51385f;
+  --career-text: #f6f0fc;
+  --career-muted: #c9bbd4;
+  --career-accent: #d5a4f3;
+}
+.hero-eyebrow { margin: 0 0 22px 48px; color: var(--career-accent); font-size: .72rem; letter-spacing: .15em; font-weight: 700; }
+.hero-type { padding: 24px 45px 12px; min-height: 140px; text-align: left; }
+.hero-type .Typewriter__wrapper { font-size: 1.5rem !important; }
+.hero-description { color: var(--career-muted); margin: 0 0 24px 45px; max-width: 560px; line-height: 1.85; }
+.career-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.hero-actions { margin-left: 45px; }
+.career-button { display: inline-flex; align-items: center; justify-content: center; gap: 12px; padding: 13px 19px; border: 1px solid #84609b; border-radius: 10px; text-decoration: none; color: var(--career-text); background: #21162f; font-size: .9rem; transition: background .2s, transform .2s; }
+.career-button.primary { background: #c997ee; color: #241133; border-color: #c997ee; font-weight: 700; }
+.career-button:hover { color: #fff; background: #68407f; transform: translateY(-2px); }
+.career-button.primary:hover { color: #241133; background: #e0b9fb; }
+.hero-location { margin: 22px 0 0 45px; color: var(--career-muted); font-size: .8rem; }
+:is(a, button, summary):focus-visible { outline: 3px solid #e7b8ff !important; outline-offset: 5px; }
+.navbar-brand h3 { font-size: clamp(.95rem, 1.8vw, 1.35rem); margin: 0; }
+.navbar-nav .nav-item { margin-left: 4px; }
+#tsparticles { pointer-events: none; }
+.career-page { padding: 150px 0 70px; color: var(--career-text); text-align: left; }
+.career-header { display: grid; grid-template-columns: 1.3fr 1fr; gap: 70px; align-items: center; margin-bottom: 100px; }
+.career-eyebrow { font-size: .72rem; font-weight: 700; letter-spacing: .16em; color: var(--career-accent); margin-bottom: 20px; }
+.career-header h1 { font-size: clamp(3rem, 6vw, 5.5rem); font-weight: 700; letter-spacing: -.065em; margin-bottom: 20px; }
+.career-page h1 span, .career-page h2 span { color: var(--career-accent); }
+.career-lead { font-size: 1.3rem; }
+.career-summary { line-height: 1.85; color: var(--career-muted); max-width: 620px; }
+.career-location { display: flex; gap: 8px; align-items: center; color: var(--career-muted); font-size: .88rem; margin-top: 28px; }
+.career-profile { padding: 35px; border: 1px solid var(--career-line); border-radius: 22px; background: var(--career-surface); }
+.career-profile h2 { font-size: 2rem; line-height: 1.25; margin: 20px 0; letter-spacing: -.035em; }
+.career-profile p { color: var(--career-muted); line-height: 1.9; margin-bottom: 24px; }
+.career-profile small { display: block; color: var(--career-muted); margin-top: 16px; font-size: .73rem; line-height: 1.6; }
+.section-intro h2, .career-bottom h2 { font-size: clamp(1.8rem, 3.2vw, 2.6rem); letter-spacing: -.04em; margin-bottom: 18px; line-height: 1.2; }
+.section-intro > p:last-child { color: var(--career-muted); line-height: 1.8; }
+.career-filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 25px 0 30px; }
+.career-filters button { background: transparent; border: 1px solid var(--career-line); border-radius: 999px; padding: 9px 18px; color: var(--career-muted); font-size: .85rem; transition: background .2s; }
+.career-filters button:hover { border-color: var(--career-accent); color: white; }
+.career-filters button[aria-pressed="true"] { background: var(--career-accent); color: #261631; border-color: var(--career-accent); font-weight: 700; }
+.journey-item { display: grid; grid-template-columns: 225px 1fr; gap: 35px; padding-bottom: 30px; }
+.journey-date { display: flex; flex-direction: column; gap: 12px; border-left: 2px solid #8a5ba6; padding: 18px 0 0 20px; font-size: .86rem; color: var(--career-muted); }
+.journey-category { color: var(--career-accent); font-size: .75rem; text-transform: uppercase; letter-spacing: .12em; }
+.journey-item details { border: 1px solid var(--career-line); background: var(--career-surface); border-radius: 16px; overflow: hidden; }
+.journey-item summary { padding: 25px; display: flex; justify-content: space-between; align-items: center; gap: 20px; cursor: pointer; list-style: none; }
+.journey-item summary::-webkit-details-marker { display: none; }
+.journey-item summary:hover { background: #2b1d3b; }
+.journey-item h3 { font-size: 1.2rem; line-height: 1.5; max-width: 620px; }
+.journey-item summary p { color: var(--career-muted); font-size: .86rem; margin: 8px 0 0; line-height: 1.6; }
+.journey-chevron { flex-shrink: 0; color: var(--career-accent); transition: transform .2s; }
+.journey-item details[open] .journey-chevron { transform: rotate(180deg); }
+.journey-item details > ul { color: var(--career-muted); padding: 0 35px 15px 45px; line-height: 1.85; font-size: .94rem; }
+.journey-item li { margin-bottom: 10px; }
+.career-text-link { color: var(--career-accent); display: inline-flex; gap: 12px; align-items: center; margin: 0 25px 25px; }
+.career-skills { margin: 80px 0; }
+.skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+.skill-group { border: 1px solid var(--career-line); border-radius: 16px; padding: 28px; background: #1d1429; }
+.skill-number { color: var(--career-accent); font-size: .75rem; letter-spacing: .1em; }
+.skill-group h3 { font-size: 1.2rem; margin: 16px 0 22px; }
+.skill-tags { display: flex; gap: 8px; flex-wrap: wrap; padding: 0; margin: 0; list-style: none; }
+.skill-tags li { padding: 8px 12px; background: #32213f; border: 1px solid #67457a; border-radius: 7px; color: #eee2f7; font-size: .83rem; }
+.career-bottom { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; border-top: 1px solid var(--career-line); padding-top: 50px; }
+.career-bottom .skill-tags { margin: 25px 0; }
+.career-bottom article > p:last-child { color: var(--career-muted); line-height: 1.85; }
+.language-list { margin-top: 26px; }
+.language-list > div { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; border-bottom: 1px solid var(--career-line); padding: 15px 0; }
+.language-list dd { color: var(--career-muted); font-size: .85rem; margin: 0; }
+.career-contact { display: flex; justify-content: space-between; gap: 30px; flex-wrap: wrap; align-items: center; margin-top: 70px; padding: 35px; border: 1px solid var(--career-line); border-radius: 18px; background: var(--career-surface); }
+.career-contact h2 { font-size: 1.8rem; }
+.career-contact > div > a { color: var(--career-accent); overflow-wrap: anywhere; }
+.career-contact .career-eyebrow { margin-bottom: 12px; }
+.career-teaser { position: relative; padding: 40px 0 0; color: var(--career-text); text-align: left; }
+.career-teaser-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 25px; padding: 30px; border: 1px solid var(--career-line); border-radius: 18px; background: var(--career-surface); }
+.career-teaser p { color: var(--career-muted); margin-bottom: 0; max-width: 640px; line-height: 1.8; }
+.career-teaser .career-eyebrow { color: var(--career-accent); margin-bottom: 12px; }
+.project-card-view .card-img-top { aspect-ratio: 16 / 10; object-fit: cover; opacity: 1 !important; }
+.project-card-view .card-title h2 { font-size: 1.4rem; }
+.project-card-view .card-body { display: flex; flex-direction: column; align-items: flex-start; }
+.project-card-view .card-text { flex: 1; }
+.project-card-view .card-body > .btn { margin: 4px 0; }
+.filtered-out { display: none; }
+@media (max-width: 991px) { .career-header { gap: 30px; } .journey-item { grid-template-columns: 180px 1fr; gap: 20px; } .career-profile { padding: 24px; } }
+@media (max-width: 767px) {
+  .career-page { padding-top: 120px; }
+  .career-header, .career-bottom, .skills-grid { grid-template-columns: 1fr; }
+  .career-header { margin-bottom: 60px; }
+  .journey-item { grid-template-columns: 1fr; gap: 12px; }
+  .journey-date { padding-top: 5px; padding-bottom: 5px; }
+  .career-contact { padding: 24px; }
+  .hero-eyebrow, .hero-description, .hero-actions, .hero-location { margin-left: 12px; margin-right: 12px; }
+  .hero-type { padding: 20px 12px; min-height: 125px; }
+  .hero-type .Typewriter__wrapper { position: static !important; }
+  .home-header { padding-top: 0 !important; }
+  .heading, .heading-name { padding-left: 12px !important; }
+  .navbar { padding: 1rem !important; }
+}
+@media print {
+  @page { margin: 15mm; }
+  body, .App, .career-page { background: white !important; color: #151515 !important; }
+  .navbar, .footer, #preloader, #tsparticles, .no-print, .journey-chevron { display: none !important; }
+  .career-page { padding: 0; font: 10pt/1.45 Arial, sans-serif; }
+  .career-page .container { max-width: none; padding: 0; }
+  .career-page * { color: #151515 !important; background: transparent !important; box-shadow: none !important; }
+  .career-header { display: block; margin-bottom: 24px; }
+  .career-header h1 { font-size: 28pt; }
+  .career-header h1::before { content: "Juliana Pansowy Furno · "; }
+  .career-profile { display: none; }
+  .career-header p { margin-bottom: 8px; }
+  .section-intro h2, .career-bottom h2 { font-size: 17pt; }
+  .section-intro h2 br, .career-bottom h2 br { display: none; }
+  .career-eyebrow { font-size: 8pt; margin-bottom: 8px; }
+  .journey-item, .journey-item.filtered-out { display: grid; grid-template-columns: 145px 1fr; gap: 15px; padding-bottom: 12px; break-inside: avoid; }
+  .journey-item details { border-color: #bbb; }
+  .journey-item summary { padding: 12px; }
+  .journey-item details > ul { padding: 0 18px 8px 30px; font-size: 10pt; }
+  .journey-item li { margin-bottom: 4px; }
+  .career-skills { margin: 25px 0; }
+  .skills-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .skill-group, .skill-group.filtered-out { display: block; padding: 12px; break-inside: avoid; border-color: #bbb; }
+  .skill-group h3 { margin: 5px 0 10px; font-size: 12pt; }
+  .skill-number { display: none; }
+  .skill-tags li { border-color: #ccc; padding: 3px 6px; font-size: 9pt; }
+  .career-bottom { gap: 25px; padding-top: 20px; break-inside: avoid; }
+  .career-contact { margin-top: 20px; padding: 15px; break-inside: avoid; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; transition: none !important; }
+}

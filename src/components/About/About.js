@@ -6,6 +6,8 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../Assets/about.png";
 import Toolstack from "./Toolstack";
+import { Link } from "react-router-dom";
+import Skills from "../Career/Skills";
 
 function About() {
   return (
@@ -22,9 +24,10 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Sabe quien <strong className="purple"> soy</strong>
+              Conocé quién <strong className="purple"> soy</strong>
             </h1>
             <Aboutcard />
+            <Link to="/recorrido" className="career-button primary">Explorar mi recorrido y CV →</Link>
           </Col>
           <Col
             md={5}
@@ -44,6 +47,7 @@ function About() {
           <strong className="purple">Herramientas</strong> que utilizo
         </h1>
         <Toolstack />
+        <Skills />
 
         <Github />
       </Container>

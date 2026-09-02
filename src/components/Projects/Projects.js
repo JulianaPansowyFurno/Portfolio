@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useContext} from "react";
+import React, {useContext} from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards.js";
 import Particle from "../Particle.js";
@@ -10,7 +10,7 @@ import {favoritoContext} from "../favoritosContext.js";
 function Projects() {
   const { data } = useProductsData();
   const navigate = useNavigate();
-  const { favorito, addFavorite, removeFavorite, resetFavorite  } = useContext(favoritoContext);
+  const { favorito, addFavorite, removeFavorite } = useContext(favoritoContext);
 
   const isFavorito = (id) => favorito.includes(id);
 
@@ -24,9 +24,6 @@ function Projects() {
     }
   };
 
-  useEffect(() => {
-    FavoritoClick()
-  }, []);
 
   return (
     <Container fluid className="project-section">
@@ -38,11 +35,11 @@ function Projects() {
          Mis recientes <strong className="purple"> creaciones </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Estos son los Trabajos Practicos que fui haciendo en el año.
+          Proyectos y trabajos prácticos de mi formación: ideas, aprendizaje y código.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           {data.map((c) =>
-          <Col md={4} className="project-card">
+          <Col md={4} className="project-card" key={c.id}>
           <ProjectCard 
           key={c.id}
             imgPath={c.imagen}

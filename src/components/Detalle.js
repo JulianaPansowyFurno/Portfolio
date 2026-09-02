@@ -1,31 +1,17 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import {useProductsData} from "../components/MyContext"
-import axios from 'axios';
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Particle from "../components/Particle";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import { CgWebsite } from "react-icons/cg";
-import { CiSaveUp1 } from "react-icons/ci";
 import { IoIosLink } from "react-icons/io";
 
 function Detalle() {
     const {id} = useParams();
     const { data } = useProductsData();
-    const [proyecto, setProyecto] = useState([]);
-
-    useEffect(() => {
-      data.filter(d => 
-        {
-          if(d.id == id){
-            setProyecto(d)
-          }
-        }
-      )      
-    }, [data])
-    
-    console.log(proyecto)
+    const proyecto = data.find(item => String(item.id) === id);
+    if (!proyecto) return <Container className="about-section"><h1>{data.length ? "No encontramos ese proyecto" : "Cargando proyecto…"}</h1><Link to="/creaciones" className="career-button">Volver a creaciones</Link></Container>;
   return (  
     <Container fluid className="about-section">
     <Particle />
